@@ -1,0 +1,1 @@
+select * from city where id = 18 lock in share mode ;
