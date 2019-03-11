@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.shiro.util;
+package com.example.demo.shiro.util;
 
 import java.text.ParseException;
 import java.util.*;
@@ -64,7 +64,7 @@ public class StringUtils {
      * @param str the String to check (may be <code>null</code>)
      * @return <code>true</code> if the String is not <code>null</code>, its length is
      *         greater than 0, and it does not contain whitespace only
-     * @see java.lang.Character#isWhitespace
+     * @see Character#isWhitespace
      */
     public static boolean hasText(String str) {
         if (!hasLength(str)) {
@@ -108,7 +108,7 @@ public class StringUtils {
      * @param str    the String to check
      * @param prefix the prefix to look for
      * @return <code>true</code> starts with the specified prefix (ignoring case), <code>false</code> if it does not.
-     * @see java.lang.String#startsWith
+     * @see String#startsWith
      */
     public static boolean startsWithIgnoreCase(String str, String prefix) {
         if (str == null || prefix == null) {
@@ -218,8 +218,8 @@ public class StringUtils {
      * @param delimiters the delimiter characters, assembled as String
      *                   (each of those characters is individually considered as delimiter).
      * @return an array of the tokens
-     * @see java.util.StringTokenizer
-     * @see java.lang.String#trim()
+     * @see StringTokenizer
+     * @see String#trim()
      */
     public static String[] tokenizeToStringArray(String str, String delimiters) {
         return tokenizeToStringArray(str, delimiters, true, true);
@@ -243,8 +243,8 @@ public class StringUtils {
      *                          will not consider subsequent delimiters as token in the first place).
      * @return an array of the tokens (<code>null</code> if the input String
      *         was <code>null</code>)
-     * @see java.util.StringTokenizer
-     * @see java.lang.String#trim()
+     * @see StringTokenizer
+     * @see String#trim()
      */
     @SuppressWarnings({"unchecked"})
     public static String[] tokenizeToStringArray(
