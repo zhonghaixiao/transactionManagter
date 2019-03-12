@@ -1,4 +1,4 @@
-package com.example.demo.restclient;
+package com.example.demo.restclient.jdkproxy;
 
 public class RealSubject implements Subject{
 
